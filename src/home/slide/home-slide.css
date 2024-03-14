@@ -1,0 +1,34 @@
+.home-slide {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  cursor: none;
+}
+
+.home-slide ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.home-slide ul li {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-slide ul li a {
+  color: white;
+  transition: 0.2s;
+  text-decoration: none;
+}
+
+.home-slide ul li:hover a {
+  color: #2196f3;
+  cursor: none;
+}

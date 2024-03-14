@@ -1,0 +1,98 @@
+.sn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  background: #10202b;
+}
+
+.sn-tabs input {
+  visibility: hidden;
+  display: none;
+}
+
+.sn-buttons {
+  position: relative;
+  display: flex;
+  gap: 80px;
+  padding: 30px 40px;
+  background: #182d3c;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.sn-buttons label {
+  width: 20%;
+  font-size: 1.75em;
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+  opacity: 0.3;
+  transition: 0.5s;
+}
+
+.sn-buttons label:hover {
+  opacity: 1;
+  filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 20px #fff);
+}
+
+.sn-tabs input:nth-child(1):checked ~ .sn-buttons label:nth-child(1),
+.sn-tabs input:nth-child(2):checked ~ .sn-buttons label:nth-child(2),
+.sn-tabs input:nth-child(3):checked ~ .sn-buttons label:nth-child(3),
+.sn-tabs input:nth-child(4):checked ~ .sn-buttons label:nth-child(4),
+.sn-tabs input:nth-child(5):checked ~ .sn-buttons label:nth-child(5) {
+  color: #fff;
+  opacity: 1;
+  filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 20px #fff);
+}
+
+.sn-underline {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 20%;
+  height: 2px;
+
+  transition: 0.5s;
+}
+
+.sn-underline:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 100%;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 50px #fff;
+}
+.sn-underline:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 100%;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 50px #fff;
+}
+
+.sn-tabs input:nth-child(1):checked ~ .sn-buttons .sn-underline {
+  left: 0;
+}
+.sn-tabs input:nth-child(2):checked ~ .sn-buttons .sn-underline {
+  left: 20%;
+}
+.sn-tabs input:nth-child(3):checked ~ .sn-buttons .sn-underline {
+  left: 40%;
+}
+.sn-tabs input:nth-child(4):checked ~ .sn-buttons .sn-underline {
+  left: 60%;
+}
+.sn-tabs input:nth-child(5):checked ~ .sn-buttons .sn-underline {
+  left: 80%;
+}

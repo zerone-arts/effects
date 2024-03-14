@@ -1,0 +1,81 @@
+.rom-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2f363e;
+}
+.rom-menu {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rom-menu li {
+  position: absolute;
+  left: 0;
+  transform-origin: 130px;
+  transition: 0.5s;
+}
+
+.rom-menu li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  font-size: 1.5em;
+  border-radius: 50%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+.rom-menu.active li:hover a ion-icon {
+  position: relative;
+  color: #2f363e;
+  z-index: 1000;
+}
+.rom-menu li a div:nth-child(1) {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  border-radius: 2px;
+  transition: height 0.5s, width 0.5s, transform 0.5s;
+  transition-delay: 0s, 0s, 0s;
+}
+.rom-menu.active li a div:nth-child(1) {
+  width: 60px;
+  height: 60px;
+  box-sizing: border-box;
+  transition: transform 0.5s, height 0.5s, width 0.5s;
+  transition-delay: 1s, 1.5s, 1.5s;
+  rotate: 135deg;
+}
+.rom-menu li a div:nth-child(2) {
+  position: absolute;
+  height: 2px;
+  z-index: -1;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.rom-menu .rom-menuToggle {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  cursor: pointer;
+  font-size: 2em;
+  transition: transform 1.5s;
+}
+
+.rom-menu.active .rom-menuToggle {
+  transform: rotate(315deg);
+}

@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap");
+
+.ft-container {
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 700;
+}
+
+.ft-container section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background: url(ft-bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.ft-container section .ft-text {
+  position: relative;
+  text-align: center;
+  color: black;
+  margin: 40px;
+  max-width: 550px;
+  cursor: pointer;
+}
+
+.ft-container section .ft-text.start {
+  text-shadow: 0px 3px 5px rgba(148, 0, 0, 0.3);
+}
+
+.ft-container section .ft-text span {
+  position: relative;
+  display: inline-block;
+}
+
+.ft-container section .ft-text span span {
+  padding: 0 3px;
+}

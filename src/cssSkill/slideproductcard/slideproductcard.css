@@ -1,0 +1,158 @@
+.spc-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(#1f1f1f, #1f1f1f 50%, #fff 50%, #fff 100%);
+}
+.spc-card {
+  position: relative;
+  width: 300px;
+  height: 380px;
+  background: #1f1f1f;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+  display: flex;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+
+.spc-card:hover {
+  width: 600px;
+}
+
+.spc-card .spc-imgBx {
+  position: relative;
+  min-width: 300px;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.spc-card .spc-imgBx img {
+  max-width: 250px;
+  transform: scaleX(-1);
+  transition: 0.5s ease-in-out;
+}
+
+.spc-card:hover .spc-imgBx img {
+  transform: scaleX(-1) rotate(35deg) translateX(20px);
+}
+
+.spc-card .spc-details {
+  position: absolute;
+  left: 0;
+  min-width: 300px;
+  height: 380px;
+  background: #1f1f1f;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  padding: 20px;
+  flex-direction: column;
+  z-index: 1;
+  transition: 0.5s ease-in-out;
+}
+.spc-card:hover .spc-details {
+  left: 300px;
+}
+
+.spc-card .spc-details::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #fff;
+}
+
+.spc-card .spc-details h3 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.2em;
+  line-height: 1em;
+}
+
+.spc-card .spc-details h3 span {
+  font-size: 0.65em;
+  font-weight: 300;
+  text-transform: none;
+  opacity: 0.85;
+}
+
+.spc-card .spc-details h4 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.9em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  line-height: 1em;
+}
+
+.spc-card .spc-details p {
+  color: #fff;
+  opacity: 0.85;
+  font-size: 0.8em;
+}
+
+.spc-card .spc-details .spc-size {
+  display: flex;
+  gap: 10px;
+}
+.spc-card .spc-details .spc-size li {
+  color: #fff;
+  font-size: 0.8em;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  opacity: 0.65;
+  cursor: pointer;
+}
+
+.spc-card .spc-details .spc-size li:hover {
+  color: #1f1f1f;
+  background: #fff;
+  opacity: 1;
+}
+
+.spc-card .spc-details .spc-group {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.spc-card .spc-details .spc-group h2 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.8em;
+}
+
+.spc-card .spc-details .spc-group h2 sup {
+  font-weight: 300;
+}
+
+.spc-card .spc-details .spc-group h2 small {
+  font-size: 0.65em;
+}
+
+.spc-card .spc-details .spc-group a {
+  display: inline-block;
+  padding: 10px 25px;
+  background: #fff;
+  text-transform: uppercase;
+  color: #1f1f1f;
+  font-weight: 600;
+}

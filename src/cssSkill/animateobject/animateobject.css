@@ -1,0 +1,110 @@
+.ao-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #434750;
+  overflow: hidden;
+}
+
+.ao-container .ao-bgtitle {
+  opacity: 0.1;
+  position: absolute;
+  right: 20px;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.ao-container .ao-loader {
+  position: relative;
+  transform: skewY(-15deg) translateX(50px) translateY(50px);
+  animation: aoAnimateColor 2.5s linear infinite;
+}
+
+@keyframes aoAnimateColor {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.ao-container .ao-loader::before {
+  content: "";
+  position: absolute;
+  top: 300px;
+  width: 300px;
+  height: 200px;
+  background: rgba(0, 0, 0, 0.1);
+  transform-origin: bottom;
+  transform: skewX(45deg);
+  filter: blur(20px);
+}
+.ao-container .ao-loader span {
+  position: relative;
+  width: 200px;
+  height: 40px;
+  display: block;
+  background: #3e3f46;
+  transition: 0.5s;
+}
+
+.ao-container .ao-loader span.click {
+  transition: 0.5s;
+  animation: aoAnimate 5s ease-in-out infinite;
+}
+
+@keyframes aoAnimate {
+  0%,
+  100% {
+    transform: translateX(-30px);
+  }
+  50% {
+    transform: translateX(30px);
+  }
+}
+
+.ao-container .ao-loader span:hover {
+  background: #33a3ee;
+  transition: 0s;
+}
+
+.ao-container .ao-loader span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150px;
+  height: 100%;
+  width: 150px;
+  background: #2e3133;
+  transform-origin: right;
+  transform: skewY(45deg);
+  transition: 0.5s;
+}
+
+.ao-container .ao-loader span:hover::before {
+  background: #1f5378;
+  transition: 0s;
+}
+
+.ao-container .ao-loader span::after {
+  content: "";
+  position: absolute;
+  top: -150px;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: #f00;
+  transform-origin: bottom;
+  transform: skew(45deg);
+  background: #35383e;
+  transition: 0.5s;
+}
+
+.ao-container .ao-loader span:hover::after {
+  background: #2982b9;
+  transition: 0s;
+}
