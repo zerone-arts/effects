@@ -20,13 +20,11 @@ function Home({ left, top }) {
 
   const [active, setActive] = useState("");
 
-  const [bgNum, setBgNum] = useState(Math.floor(Math.random() * bgList.length));
+  const [bgNum, setBgNum] = useState(0);
 
-  const containerRef = useRef(null);
-  const webRef = useRef(null);
-  const cssRef = useRef(null);
-  const slideRef = useRef(null);
-  const canvasRef = useRef(null);
+  const scrollChannelHandle = (e) => {
+    setChannel(e);
+  };
 
   const titleHandle = (e) => {
     setTitle(e);
@@ -43,8 +41,12 @@ function Home({ left, top }) {
     title === "" ? setActive("") : setActive("active");
   }, [title]);
 
+  useEffect(() => {
+    setBgNum(Math.floor(Math.random() * bgList.length));
+  }, [channel]);
+
   return (
-    <div className="home-container" id="container" ref={containerRef}>
+    <div className="home-container" id="container">
       <div className="home-bg">
         {bgList.map((item, idx) => {
           return (
@@ -57,8 +59,11 @@ function Home({ left, top }) {
           );
         })}
       </div>
-      <div className="home-select" id="css" ref={cssRef}>
-        <HomeCss titleHandle={(e) => titleHandle(e)} />
+      <div className="home-select" id="css">
+        <HomeCss
+          titleHandle={(e) => titleHandle(e)}
+          scrollChannelHandle={scrollChannelHandle}
+        />
         {channel === "css" ? (
           <div className="home-titleBx" style={{ left: left, top: top }}>
             {title}
@@ -67,8 +72,11 @@ function Home({ left, top }) {
           <div></div>
         )}
       </div>
-      <div className="home-select" id="web" ref={webRef}>
-        <HomeWeb titleHandle={(e) => titleHandle(e)} />
+      <div className="home-select" id="web">
+        <HomeWeb
+          titleHandle={(e) => titleHandle(e)}
+          scrollChannelHandle={scrollChannelHandle}
+        />
         {channel === "web" ? (
           <div className="home-titleBx" style={{ left: left, top: top }}>
             {title}
@@ -77,8 +85,11 @@ function Home({ left, top }) {
           <div></div>
         )}
       </div>
-      <div className="home-select" id="slide" ref={slideRef}>
-        <HomeSlide titleHandle={(e) => titleHandle(e)} />
+      <div className="home-select" id="slide">
+        <HomeSlide
+          titleHandle={(e) => titleHandle(e)}
+          scrollChannelHandle={scrollChannelHandle}
+        />
         {channel === "slide" ? (
           <div className="home-titleBx" style={{ left: left, top: top }}>
             {title}
@@ -87,8 +98,11 @@ function Home({ left, top }) {
           <div></div>
         )}
       </div>
-      <div className="home-select" id="canvas" ref={canvasRef}>
-        <HomeCanvas titleHandle={(e) => titleHandle(e)} />
+      <div className="home-select" id="canvas">
+        <HomeCanvas
+          titleHandle={(e) => titleHandle(e)}
+          scrollChannelHandle={scrollChannelHandle}
+        />
         {channel === "canvas" ? (
           <div className="home-titleBx" style={{ left: left, top: top }}>
             {title}

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 import "./home-css.css";
@@ -44,8 +44,9 @@ let list = [
   { icon: "", name: "" },
   { icon: "", name: "" },
 ];
-function HomeCss({ titleHandle }) {
+function HomeCss({ titleHandle, scrollChannelHandle }) {
   const [title, setTitle] = useState("");
+  const cssRef = useRef(null);
 
   const OverHandle = (e, item) => {
     setTitle(item.name);
@@ -57,23 +58,39 @@ function HomeCss({ titleHandle }) {
   useEffect(() => {
     titleHandle(title);
   }, [title]);
+
+  const handleScroll = () => {
+    if (cssRef.current?.getBoundingClientRect().top <= 240) {
+      scrollChannelHandle("css");
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll); //clean up
+    };
+  }, []);
+
   return (
-    <div className="home-css">
-      <ul>
-        {list.map((item, idx) => {
-          return item.icon !== "" ? (
-            <li
-              key={idx}
-              onMouseOver={(e) => OverHandle(e, item)}
-              onMouseLeave={OutHandle}
-            >
-              <Link to={`/css/${item.name.toLowerCase()}`}>{item.icon}</Link>
-            </li>
-          ) : (
-            <div key={idx} style={{ display: "none" }}></div>
-          );
-        })}
-      </ul>
+    <div className="home-css-container" ref={cssRef}>
+      <div className="home-css">
+        <ul>
+          {list.map((item, idx) => {
+            return item.icon !== "" ? (
+              <li
+                key={idx}
+                onMouseOver={(e) => OverHandle(e, item)}
+                onMouseLeave={OutHandle}
+              >
+                <Link to={`/css/${item.name.toLowerCase()}`}>{item.icon}</Link>
+              </li>
+            ) : (
+              <div key={idx} style={{ display: "none" }}></div>
+            );
+          })}
+        </ul>
+      </div>
     </div>
   );
 }
