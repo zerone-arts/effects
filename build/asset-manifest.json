@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/effects/static/css/main.8a4b2a47.css",
-    "main.js": "/effects/static/js/main.522694c4.js",
+    "main.css": "/effects/static/css/main.26afdf11.css",
+    "main.js": "/effects/static/js/main.c3de6b4f.js",
     "static/media/bg2.png": "/effects/static/media/bg2.4bea0a49813b858e309c.png",
     "static/media/bg3.jpg": "/effects/static/media/bg3.1942838579e5b2bd5f6f.jpg",
     "static/media/bt-bg.png": "/effects/static/media/bt-bg.3e77df81c7765fa6206c.png",
@@ -72,11 +72,11 @@
     "static/media/cp9.png": "/effects/static/media/cp9.fddb7461199bf9c955e4.png",
     "static/media/cocacola_logo.png": "/effects/static/media/cocacola_logo.060ee9d4ea7ec83f2389.png",
     "index.html": "/effects/index.html",
-    "main.8a4b2a47.css.map": "/effects/static/css/main.8a4b2a47.css.map",
-    "main.522694c4.js.map": "/effects/static/js/main.522694c4.js.map"
+    "main.26afdf11.css.map": "/effects/static/css/main.26afdf11.css.map",
+    "main.c3de6b4f.js.map": "/effects/static/js/main.c3de6b4f.js.map"
   },
   "entrypoints": [
-    "static/css/main.8a4b2a47.css",
-    "static/js/main.522694c4.js"
+    "static/css/main.26afdf11.css",
+    "static/js/main.c3de6b4f.js"
   ]
 }
