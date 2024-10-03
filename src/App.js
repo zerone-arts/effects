@@ -47,6 +47,7 @@ import RandomBackground from "./cssSkill/RandomBackground/RandomBackground";
 import CanvasGradient from "./canvas/CanvasGradient/CanvasGradient";
 import CanvasShapesRotate from "./canvas/CanvasShapesRotate/CanvasShapesRotate";
 import RadialOctagonMenu from "./cssSkill/RadialOctagonMenu/RadialOctagonMenu";
+import Sliderotation3d from "./slidebox/sliderotation3d/sliderotation3d";
 
 function App() {
   const [active, setActive] = useState("");
@@ -117,6 +118,7 @@ function App() {
 
           <Route path="/slide/slide1" element={<Slide1 />} />
           <Route path="/slide/slideshow3d" element={<Slideshow3d />} />
+          <Route path="/slide/sliderotation3d" element={<Sliderotation3d />} />
 
           <Route path="/canvas/CanvasGradient" element={<CanvasGradient />} />
           <Route

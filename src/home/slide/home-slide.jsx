@@ -5,7 +5,7 @@ import "./home-slide.css";
 let list = [
   { icon: "SL1", name: "Slide1" },
   { icon: "SS3", name: "SlideShow3d" },
-  { icon: "", name: "" },
+  { icon: "SR3", name: "SlideRotation3d " },
   { icon: "", name: "" },
   { icon: "", name: "" },
 ];
