@@ -14,7 +14,6 @@ function Brand() {
   const colorHandle = (e) => {
     setMainFColor(e);
   };
-
   useEffect(() => {
     if (path === "/web/brand/menu") {
       setMainFColor("black");
