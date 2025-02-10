@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import coldAmericano from "../../../img/brand-menu-cold/콜드브루아메리카노_155132.jpg";
-import coldLatte from "../../../img/brand-menu-cold/콜드브루카페라떼_155227.jpg";
-import coldMilk from "../../../img/brand-menu-cold/연유콜드브루플로트_10335.jpg";
-import coldOat from "../../../img/brand-menu-cold/오트-콜드브루-플로토_12955.png";
-import coldBrew from "../../../img/brand-menu-cold/콜드브루_153649.jpg";
+import coldAmericano from "../../../img/brand-menu-cold/155132.jpg";
+import coldLatte from "../../../img/brand-menu-cold/155227.jpg";
+import coldMilk from "../../../img/brand-menu-cold/10335.jpg";
+import coldOat from "../../../img/brand-menu-cold/12955.png";
+import coldBrew from "../../../img/brand-menu-cold/153649.jpg";
 
 let hotEx = [
   {
