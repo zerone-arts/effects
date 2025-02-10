@@ -1,5 +1,5 @@
 import React from "react";
-import EG from "../../../img/brand-beverage-tea/영그레이_143440.jpg";
+import EG from "../../../img/brand-beverage-tea/143440.jpg";
 import EB from "../../../img/brand-beverage-tea/퍼스트브레이크_143611.jpg";
 import CC from "../../../img/brand-beverage-tea/커즈마인_143636.jpg";
 import RO from "../../../img/brand-beverage-tea/오렌지보스_14372.jpg";
