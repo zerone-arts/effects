@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import americano from "../../../img/brand-menu-hot/아메리카노_155657.jpg";
-import caffelatte from "../../../img/brand-menu-hot/카페라떼_155720.jpg";
-import cappuccino from "../../../img/brand-menu-hot/카푸치노_155752.jpg";
-import caramel from "../../../img/brand-menu-hot/카라멜라떼마끼아또_16245.png";
-import vanilla from "../../../img/brand-menu-hot/바닐라라떼마끼아또_16329.jpg";
+import americano from "../../../img/brand-menu-hot/155657.jpg";
+import caffelatte from "../../../img/brand-menu-hot/155720.jpg";
+import cappuccino from "../../../img/brand-menu-hot/155752.jpg";
+import caramel from "../../../img/brand-menu-hot/16245.png";
+import vanilla from "../../../img/brand-menu-hot/16329.jpg";
 import hazelnut from "../../../img/brand-menu-hot/hazelnutoat.jpg";
-import mocha from "../../../img/brand-menu-hot/카페모카_16417.jpg";
+import mocha from "../../../img/brand-menu-hot/16417.jpg";
 
 let hotList = [
   "Americano",
