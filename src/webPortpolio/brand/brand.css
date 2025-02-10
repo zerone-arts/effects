@@ -1,0 +1,1521 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald:wght@200;300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.brand {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+
+.header {
+  z-index: 15;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+}
+
+.logoBox {
+  z-index: 15;
+  display: flex;
+  width: 300px;
+  margin-left: 30px;
+  text-decoration-line: none;
+  margin-top: -2px;
+  cursor: pointer;
+}
+
+.dot {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  left: 108px;
+  top: 14px;
+}
+.logoBox h1 {
+  position: relative;
+  margin-left: 10px;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 800;
+  font-size: 20px;
+  top: 5px;
+  letter-spacing: 3px;
+  color: #e60012;
+}
+
+.logoBox h2 {
+  position: relative;
+  margin-left: 5px;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 700;
+  font-size: 10px;
+  top: 14px;
+  color: white;
+}
+.categoryBox {
+  width: 30%;
+  margin-right: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.category {
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 700;
+  font-size: 15px;
+
+  text-decoration-line: none;
+  margin-right: 10px;
+  transition: 0.5s all;
+}
+
+/*main*/
+.brand-Main {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: wihte;
+  overflow: hidden;
+}
+/*ch1*/
+.main-ch1-container {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-ch1-slidebox {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.imgSilideBox {
+  position: absolute;
+  width: 500%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-ch1-slide {
+  width: 100%;
+  height: 100%;
+
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+}
+
+.titleSilideBox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.main-ch1-titleSlide {
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s all;
+  transition-delay: 1.5s;
+}
+.main-ch1-titleSlide h2 {
+  position: relative;
+  color: white;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 700;
+  font-size: 15px;
+  left: -20%;
+  top: -10%;
+}
+
+.sloganSilideBox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.main-ch1-sloganSlide {
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s all;
+  transition-delay: 1.5s;
+}
+
+.main-ch1-sloganSlide h2 {
+  position: relative;
+  color: white;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.btnBox {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.btn {
+  transition: 0.5s all;
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+  border: none;
+}
+
+/*branding*/
+
+.brand-Branding {
+  width: 100%;
+  height: 410vh;
+  background-color: black;
+  overflow: hidden;
+}
+
+.branding-main {
+  position: relative;
+  width: 100%;
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 1)),
+    url(./img/brandingBg.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.branding-textbox {
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  left: 20%;
+  top: 200px;
+}
+
+.branding-textbox div:nth-child(1) {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  color: #ffcc00;
+  font-family: "Nanum Myeongjo", serif;
+  letter-spacing: 2px;
+  font-size: 10px;
+}
+
+.branding-textbox div:nth-child(1) span {
+  width: 10%;
+  height: 0px;
+  border: 0.1px solid #ffcc00;
+  margin-right: 10px;
+}
+.branding-textbox div:nth-child(2) {
+  margin-top: -5px;
+  opacity: 0.9;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 25px;
+  font-weight: 500;
+}
+.branding-textbox div:nth-child(3) {
+  margin-top: -15px;
+  opacity: 0.9;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.branding-textbox button {
+  cursor: pointer;
+  margin-top: 20px;
+  color: white;
+  background-color: transparent;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 100;
+  border: none;
+}
+.branding-textbox button span {
+  font-weight: 300;
+  position: relative;
+  font-size: 15px;
+  top: 4px;
+  left: 3px;
+}
+
+.branding-messenger {
+  z-index: 10;
+  color: white;
+  position: fixed;
+  width: 10px;
+  height: 100px;
+  left: 5%;
+  top: 230px;
+}
+
+.branding-btnLinebox {
+  z-index: 10;
+  position: fixed;
+  width: 5px;
+  height: 200px;
+  right: 5%;
+  top: 200px;
+}
+
+.branding-btnLIneBox-Line {
+  position: absolute;
+  opacity: 0.3;
+  width: 30%;
+  height: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+.branding-btnLIneBox-Line2 {
+  transition: 0.3s all;
+  position: absolute;
+  opacity: 1;
+  width: 30%;
+
+  background-color: white;
+  border-radius: 10px;
+}
+.branding-btnNumbox {
+  cursor: pointer;
+  z-index: 10;
+  position: fixed;
+  width: 50px;
+  height: 200px;
+  right: 9%;
+  top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: right;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 100;
+  transition: 1s all;
+  color: white;
+}
+.branding-btnNumbox li {
+  z-index: 10;
+  cursor: pointer;
+}
+
+.branding-messenger h2 {
+  opacity: 1;
+  writing-mode: vertical-lr;
+  font-size: 10px;
+  letter-spacing: 3px;
+  font-family: "Nanum Myeongjo", serif;
+}
+
+.branding-ch1 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  color: white;
+}
+
+.branding-ch1-numbox {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+
+  transform: translate(-50%, -50%);
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  opacity: 0.3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.branding-ch1-allbox {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.branding-ch1-textbox {
+  width: 280px;
+  height: 300px;
+
+  margin-right: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.branding-ch1-textbox div:nth-child(2) {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: #ffcc00;
+}
+.branding-ch1-textbox div:nth-child(2) div {
+  position: relative;
+  width: 50px;
+  height: 0px;
+  border: 0.1px solid #ffcc00;
+  margin-right: 10px;
+}
+
+.branding-ch1-textbox h1 {
+  margin-top: 10px;
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 25px;
+  font-weight: 300;
+}
+.branding-ch1-textbox p {
+  margin-top: 10px;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 300;
+  font-size: 10px;
+}
+
+.branding-ch1-textbox button {
+  position: relative;
+  margin-top: 10px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  color: #ffcc00;
+
+  text-align: left;
+}
+
+.branding-ch1-imgbox {
+  width: 250px;
+  height: 300px;
+  background-color: white;
+}
+
+.branding-ch1-imgbox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.branding-ch2 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  color: white;
+}
+.branding-ch2-numbox {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+
+  transform: translate(-50%, -50%);
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  opacity: 0.3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.branding-ch2-allbox {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.branding-ch2-textbox {
+  width: 280px;
+  height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.branding-ch2-textbox div:nth-child(2) {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  align-items: center;
+  color: #ffcc00;
+}
+.branding-ch2-textbox div:nth-child(2) div {
+  position: relative;
+  width: 50px;
+  height: 0px;
+  border: 0.1px solid #ffcc00;
+  margin-right: 10px;
+}
+
+.branding-ch2-textbox h1 {
+  margin-top: 10px;
+  font-size: 25px;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 300;
+}
+.branding-ch2-textbox p {
+  margin-top: 10px;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 300;
+  font-size: 10px;
+}
+
+.branding-ch2-textbox button {
+  position: relative;
+  margin-top: 10px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  color: #ffcc00;
+
+  text-align: left;
+}
+
+.branding-ch2-imgbox {
+  width: 250px;
+  height: 300px;
+  margin-right: 70px;
+  background-color: white;
+}
+.branding-ch2-imgbox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.branding-ch3 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  color: white;
+}
+.branding-ch3-numbox {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+
+  transform: translate(-50%, -50%);
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  opacity: 0.3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.branding-ch3-allbox {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.branding-ch3-textbox {
+  width: 280px;
+  height: 300px;
+
+  margin-right: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.branding-ch3-textbox div:nth-child(2) {
+  font-family: "Roboto", sans-serif;
+
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  color: #ffcc00;
+}
+.branding-ch3-textbox div:nth-child(2) div {
+  position: relative;
+  width: 50px;
+  height: 0px;
+  border: 0.1px solid #ffcc00;
+  margin-right: 10px;
+}
+
+.branding-ch3-textbox h1 {
+  margin-top: 10px;
+  font-size: 25px;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 300;
+}
+.branding-ch3-textbox p {
+  margin-top: 10px;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 300;
+  font-size: 10px;
+}
+
+.branding-ch3-textbox button {
+  position: relative;
+  margin-top: 10px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  color: #ffcc00;
+
+  text-align: left;
+}
+
+.branding-ch3-imgbox {
+  width: 250px;
+  height: 300px;
+  background-color: white;
+}
+
+.branding-ch3-imgbox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*Menu*/
+.brand-Menu {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.brand-menu-header {
+  width: 100%;
+  height: 10%;
+  margin-top: 7%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brand-menu-line {
+  position: relative;
+  width: 10%;
+  height: 0%;
+  border: 0.5px solid red;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10px;
+}
+
+.brand-menu-header ul {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.brand-menu-Link {
+  text-decoration-line: none;
+}
+
+.brand-menu-list {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: black;
+  transition: 0.5s all;
+}
+
+.brand-menu-list-line {
+  bottom: 0px;
+  width: 100%;
+  height: 0%;
+  border: 0.1px solid;
+  transition: 0.5s all;
+}
+
+.brand-menu-container {
+  width: 100%;
+  height: 83%;
+  display: flex;
+}
+
+.brand-menu-coffee-select {
+  position: absolute;
+  width: 150px;
+  height: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 500;
+  font-size: 15px;
+  transition: 1s all;
+}
+
+.brand-menu-coffee-select span {
+  position: absolute;
+  right: -30px;
+  font-weight: 200;
+}
+
+.brand-menu-coffee-list {
+  position: absolute;
+  width: 150px;
+
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 2px;
+  border-left: 1px solid black;
+  transition: 1s all;
+  overflow: hidden;
+}
+.brand-menu-coffee-list {
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.brand-menu-coffe-choise {
+  position: absolute;
+  width: 100%;
+  height: 1000px;
+
+  margin-top: 50px;
+}
+
+.brand-menu-coffee-italian {
+  width: 100%;
+  height: 100%;
+}
+
+.brand-menu-coffee-italian-menu {
+  position: relative;
+  width: 800px;
+  height: 40%;
+
+  margin-top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+
+.brand-menu-coffee-italian-menu-Arr {
+  width: 3000px;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.brand-menu-coffee-italian-menu-list {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  transition: 1s all;
+}
+.brand-menu-coffee-italian-menu-list img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.brand-menu-coffee-italian-left {
+  z-index: 20;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  border: none;
+  background-color: transparent;
+}
+
+.brand-menu-coffee-italian-right {
+  z-index: 20;
+  width: 250px;
+  height: 250px;
+  right: 0;
+  position: absolute;
+  border: none;
+  background-color: transparent;
+}
+
+.brand-menu-coffee-italian-menu-title {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  font-family: "Nanum Myeongjo", serif;
+}
+
+.brand-menu-coffee-italian-menu-title-list {
+  height: 20px;
+}
+
+.brand-menu-coffee-italian-menu-line {
+  width: 0px;
+  height: 100px;
+  border: 0.5px solid black;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.brand-menu-coffe-italian-menu-ex {
+  margin-top: 30px;
+  width: 100%;
+  height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Nanum Myeongjo", serif;
+}
+
+.brand-menu-coffe-italian-menu-ex h2 {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.brand-menu-coffe-italian-menu-ex p {
+  margin-top: 10px;
+  font-size: 10px;
+  font-weight: 300;
+}
+
+.brand-menu-beverage {
+  margin-top: 20px;
+  width: 100%;
+  /* height: 2150px; */
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.upHandle {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.upHandle span {
+  width: 100%;
+  height: 100%;
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.bran-menu-beverage-line {
+  position: absolute;
+  width: 0px;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 0.5px solid black;
+  margin-top: 60px;
+}
+
+.brand-menu-beverage-list-box {
+  margin-top: 20px;
+  width: 90%;
+  height: auto;
+}
+
+.brand-menu-beverage-list-box h2 {
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+.brand-menu-beverage-list {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: normal;
+  gap: 10px;
+}
+
+.brand-menu-beverage-list li {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.brand-menu-beverage-list li img {
+  width: 80%;
+  height: 80%;
+  transition: 0.5s all;
+}
+.brand-menu-beverage-list li:hover > img {
+  opacity: 0.3;
+}
+
+.brand-menu-beverage-list li p {
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.brand-menu-beverage-list li p:nth-child(3) {
+  margin-top: 5px;
+  font-size: 10px;
+}
+.brand-menu-beverage-list li p:nth-child(4) {
+  position: absolute;
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 10px;
+  width: 70%;
+  top: 40%;
+  transform: translateY(-50%);
+  opacity: 0;
+}
+
+.brand-menu-beverage-list li:hover p:nth-child(4) {
+  opacity: 1;
+}
+
+.brand-menu-food {
+  margin-top: 20px;
+  width: 100%;
+  /* height: 2150px; */
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.brand-menu-md {
+  margin-top: 20px;
+  width: 100%;
+  /* height: 2150px; */
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/*News*/
+
+.brand-Media {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+  margin-top: 50px;
+}
+
+.brand-media-container {
+  width: 100%;
+  height: 500px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: gray;
+}
+
+.brand-medias {
+  width: 15%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: gray;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: 1s all;
+}
+
+.brand-medias:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 10px;
+}
+
+.facebook-f {
+  z-index: 10;
+}
+
+.facebook-logo {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+.facebook-facebook {
+  position: relative;
+  color: gray;
+}
+
+.facebook-logo::before {
+  border-radius: 3px;
+  width: 0%;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  content: "";
+  background-color: #3b5998;
+  transition: 0.5s all;
+}
+
+.brand-medias.facebook:hover .facebook-logo::before {
+  width: 100%;
+}
+
+.facebook-facebook::before {
+  border-radius: 3px;
+  width: 0%;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  content: "Facebook";
+  color: #3b5998;
+
+  transition: 0.5s all;
+  overflow: hidden;
+}
+
+.brand-medias.facebook:hover .facebook-facebook::before {
+  transition-delay: 0.4s;
+  width: 100%;
+}
+
+.blog-b {
+  z-index: 10;
+}
+
+.blog-logo {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  border-radius: 3px;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+.blog-blog {
+  position: relative;
+  color: gray;
+}
+
+.blog-logo::before {
+  border-radius: 3px;
+  width: 0%;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  content: "";
+  background-color: #2db400;
+  transition: 0.5s all;
+}
+
+.brand-medias.blog:hover .blog-logo::before {
+  width: 100%;
+}
+
+.blog-blog::before {
+  border-radius: 3px;
+  width: 0%;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  content: "Blog";
+  color: #2db400;
+
+  transition: 0.5s all;
+  overflow: hidden;
+}
+
+.brand-medias.blog:hover .blog-blog::before {
+  transition-delay: 0.4s;
+  width: 100%;
+}
+
+.instar-logo {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  background-color: gray;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.instar-logo::before {
+  border-radius: 3px;
+  width: 0%;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  content: "";
+  background: radial-gradient(
+      circle farthest-corner at 32% 106%,
+      #ffe17d 0%,
+      #ffcd69 10%,
+      #fa9137 28%,
+      #eb4141 42%,
+      transparent 82%
+    ),
+    linear-gradient(135deg, #234bd7 12%, #c33cbe 58%);
+  transition: 0.5s all;
+}
+
+.brand-medias.instargram:hover .instar-logo::before {
+  width: 100%;
+}
+
+.insta-insta {
+  position: relative;
+}
+
+.insta-insta::before {
+  border-radius: 3px;
+  width: 0%;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  content: "Instagram";
+  background: radial-gradient(
+      circle farthest-corner at 32% 106%,
+      #ffe17d 0%,
+      #ffcd69 10%,
+      #fa9137 28%,
+      #eb4141 42%,
+      transparent 82%
+    ),
+    linear-gradient(135deg, #234bd7 12%, #c33cbe 58%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  transition: 0.5s all;
+  overflow: hidden;
+}
+
+.brand-medias.instargram:hover .insta-insta::before {
+  transition-delay: 0.4s;
+  width: 100%;
+}
+
+/*
+background: radial-gradient(circle farthest-corner at 32% 106%,#ffe17d 0%,#ffcd69 10%,#fa9137 28%,#eb4141 42%,transparent 82%) , linear-gradient(135deg,#234bd7 12%,#c33cbe 58%);
+*/
+.instar-bg {
+  width: 13px;
+  height: 13px;
+  background-color: white;
+  border-radius: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.instar-logo-circle {
+  width: 8px;
+  height: 8px;
+  background-color: gray;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.instar-logo-incircle {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: white;
+  z-index: 10;
+}
+
+.instar-logo-circle::before {
+  border-radius: 50%;
+  width: 0%;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  content: "";
+  background: radial-gradient(
+      circle farthest-corner at 32% 106%,
+      #ffe17d 0%,
+      #ffcd69 10%,
+      #fa9137 28%,
+      #eb4141 42%,
+      transparent 82%
+    ),
+    linear-gradient(135deg, #234bd7 12%, #c33cbe 58%);
+  transition: 0.5s all;
+}
+
+.brand-medias.instargram:hover .instar-logo-circle::before {
+  width: 100%;
+}
+
+.youtube-logo {
+  width: 20px;
+  height: 15px;
+  position: relative;
+  border-radius: 3px;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  transition: 0.5s all;
+}
+
+.youtube-logo::before {
+  border-radius: 3px;
+  width: 0%;
+  position: absolute;
+  height: 100%;
+  left: 0;
+  content: "";
+  background-color: #c4302b;
+  transition: 0.5s all;
+}
+.brand-medias.youtube:hover .youtube-logo::before {
+  width: 100%;
+}
+
+.youtube-triangle {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid transparent;
+  border-left: 4px solid white;
+  border-right: 4px solid transparent;
+  left: 2.5px;
+}
+
+.youtube-youtube {
+  color: gray;
+  position: relative;
+}
+
+.youtube-youtube::before {
+  border-radius: 3px;
+  width: 0%;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  content: "Youtube";
+  color: #c4302b;
+
+  transition: 0.5s all;
+  overflow: hidden;
+}
+
+.brand-medias.youtube:hover .youtube-youtube::before {
+  transition-delay: 0.4s;
+  width: 100%;
+}
+
+.happypoint-logo {
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1px;
+  font-size: 15px;
+  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+.happypoint-semicircle-1 {
+  width: 4px;
+  height: 2px;
+  border-radius: 0 0 2px 2px;
+  background-color: gray;
+  position: relative;
+  transition: 0.5s all;
+  overflow: hidden;
+}
+/* #0c0f8b */
+.happypoint-semicircle-1::before {
+  position: absolute;
+  width: 0px;
+  height: 2px;
+  left: 0;
+
+  background-color: #0c0f8b;
+  content: "";
+  transition: 0.5s all;
+  overflow: hidden;
+}
+
+.brand-medias.happypoint:hover .happypoint-semicircle-1::before {
+  width: 100%;
+}
+
+.happypoint-semicircle-2 {
+  width: 8px;
+  height: 4px;
+  border-radius: 0 0 4px 4px;
+  background-color: gray;
+  position: relative;
+  transition: 0.5s all;
+  overflow: hidden;
+}
+
+.happypoint-semicircle-2::before {
+  position: absolute;
+  width: 0px;
+  height: 100%;
+  left: 0;
+
+  background-color: #0c0f8b;
+  content: "";
+  transition: 0.5s all;
+  overflow: hidden;
+}
+
+.brand-medias.happypoint:hover .happypoint-semicircle-2::before {
+  width: 100%;
+}
+
+.happypoint-circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.happypoint-circle::before {
+  position: absolute;
+  width: 0px;
+  height: 100%;
+  left: 0;
+
+  background-color: #0c0f8b;
+  content: "";
+  transition: 0.5s all;
+  overflow: hidden;
+}
+
+.brand-medias.happypoint:hover .happypoint-circle::before {
+  width: 100%;
+}
+
+.happypoint-incircle {
+  z-index: 10;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.happypoint-happypoint {
+  color: gray;
+  position: relative;
+}
+
+.happypoint-happypoint::before {
+  border-radius: 3px;
+  width: 0%;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  content: "HappyPoint";
+  color: #0c0f8b;
+  transition: 0.5s all;
+  overflow: hidden;
+}
+
+.brand-medias.happypoint:hover .happypoint-happypoint::before {
+  transition-delay: 0.4s;
+  width: 100%;
+}
+
+/*Location*/
+.brand-Location {
+  width: 100%;
+  height: 80%;
+  background-color: white;
+  margin-top: 50px;
+}
+
+.brand-location-container {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-map {
+  width: 400px;
+  height: 400px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 10px;
+}
+
+.location-map img:nth-child(1) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.location-location {
+  width: 400px;
+  height: 400px;
+}
+
+.brand-location-container ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.brand-location-container ul li {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.brand-location-container ul li span {
+  font-size: 20px;
+  margin-right: 20px;
+}

@@ -1,0 +1,339 @@
+{
+  "keyword": ["FrontEnd", "Design", "Plan"],
+  "seasonal": [
+    {
+      "kname": "젤라또 레드빈 빙수",
+      "ename": "Gelato Red Bean",
+      "ex": "고소한 팥과 인절미에 쏠티 젤라또가 만나 찰떡궁합의 팥빙수"
+    },
+    {
+      "kname": "애플망고 빙수",
+      "ename": "Applemango",
+      "ex": "애플망고, 코코넛 젤리와 요거트 젤라또가 듬뿍 올라간 망고 빙수"
+    },
+    {
+      "kname": "솔티 카라멜 밀크티 빙수",
+      "ename": "Salt Caramel Milk Tea",
+      "ex": "단짠 솔트 카라멜과 향긋한 밀크티를 티라미수 젤라또와 함께 즐길 수 있는 빙수"
+    },
+    {
+      "kname": "젤라또 자두딸기 빙수",
+      "ename": "Gelato Plum Strawberry",
+      "ex": "달콤 상큼한 체리베이스와, 체리라떼 젤라또를 함께 즐길 수 있는 빙수"
+    },
+    {
+      "kname": "아마레나 체리 젤라니따",
+      "ename": "Amarena Cherry Gelanita",
+      "ex": "상큼한 아마레나 체리소스에 부드러운 라떼젤라또의 만남, 체리라떼 젤라또를 토핑한 젤라니따"
+    },
+    {
+      "kname": "솔트 카라멜 젤라니따",
+      "ename": "Salt Caramel Gelanita",
+      "ex": "부드럽고 달콤한 단짠 솔트 카라멜에 천일염젤라또를 토핑한 젤라니따"
+    },
+    {
+      "kname": "초코 & 바나나 젤라니따",
+      "ename": "Chocolate & Banana Gelanita",
+      "ex": "달콤한 초콜릿과 라떼 젤라또의 만남, 바나나젤라또를 토핑한 젤라니따"
+    },
+    {
+      "kname": "민초 & 카카오 젤라니따",
+      "ename": "Mint & Cacao Gelanita",
+      "ex": "부담없이 즐길 수 있는 민트와 초콜릿의 중독성 깊은 만남, 카카오골드 젤라또를 토핑한 젤라니따"
+    },
+
+    {
+      "kname": "돌체 콜드브루 그라니따",
+      "ename": "Dolce Coldbrew Granita",
+      "ex": "쫀득한 솔티 카라멜 젤라또에 카라멜 소스를 더한 쉐이크 타입에 콜드브루, 휘핑크림이 어우러져 부드럽고 달콤하게 즐길 수 있는 커피 그라니따"
+    },
+    {
+      "kname": "리모네 코코 커피 그라니따",
+      "ename": "LimonaeCoco Coffee Granita",
+      "ex": "코코넛 레몬 그라니따에 콜드브루 샷을 부어 제공되는 맛의 밸런스가 조화로운 커피 그라니따"
+    }
+  ],
+  "granita": [
+    {
+      "kname": "코코넛 커피 그라니따",
+      "ename": "Coconut Coffee Granita",
+      "ex": "코코넛 플레이버와 콜드브루가 선사하는 부드러운 달콤함으로 부담 없이 즐기는 그라니따"
+    },
+    {
+      "kname": "샤인머스켓 그라니따",
+      "ename": "Shine Muscat Granita",
+      "ex": "새콤달콤한 샤인머스캣 원물이 듬뿍 들어간 그라니따"
+    },
+    {
+      "kname": "스트로베리 그라니따",
+      "ename": "StrawBerry Granita",
+      "ex": " 딸기와 딸기 라떼 젤라또의 상큼함에 딸기 쿠키 크런치의 씹는 재미가 더해진 그라니따"
+    },
+    {
+      "kname": "복숭아 그라니따",
+      "ename": "Peach Granita",
+      "ex": "달콤한 복숭아와 상큼한 요거트 젤라또가 조화로운 그라니따"
+    },
+    {
+      "kname": "그린티 그라니따",
+      "ename": "Green Tea Granita",
+      "ex": "국내산 고급 녹차 파우더의 향긋함과 피오르디라떼 젤라또의 달콤함이 조화를 이룬 그라니따"
+    },
+    {
+      "kname": "플레인 요거트 그라니따",
+      "ename": "Plain Yogurt Granita",
+      "ex": "요거트의 풍미 가득한 파스쿠찌 스테디셀러 그라니따"
+    },
+    {
+      "kname": "스트로베리 요거트 그라니따",
+      "ename": "StrawBerry Yogurt Granita",
+      "ex": "스트로베리 요거트와 요거트 젤라또가 조화를 이룬 상큼한 그라니따"
+    },
+    {
+      "kname": "블루베리 요거트 그라니따",
+      "ename": "Blueberry Yogurt Granita",
+      "ex": "블루베리 요거트와 요거트 젤라또가 조화를 이룬 상큼한 그라니따"
+    },
+    {
+      "kname": "망고 요거트 그라니따",
+      "ename": "Mango Yogurt Granita",
+      "ex": "망고 요거트와 요거트 젤라또가 조화를 이룬 상큼한 그라니따"
+    },
+    {
+      "kname": "자바칩 그라니따",
+      "ename": "Javachip Granita",
+      "ex": "자바칩의 진한 초콜릿 풍미와 천일염 젤라또의 짭쪼름함이 조화를 이룬 그라니따"
+    },
+    {
+      "kname": "시칠리아 레몬 그라니따",
+      "ename": "Lemon Granita",
+      "ex": "시칠리아 레몬 활용한 달콤한 감칠맛이 일품인 상큼한 레몬 그라니따"
+    }
+  ],
+  "Tea": [
+    {
+      "kname": "영그레이",
+      "ename": "Grey",
+      "ex": "클래식한 기문 홍차와 은은한 베르가못 향이 어우러진 얼그레이 티"
+    },
+    {
+      "kname": "퍼스트 브레이크",
+      "ename": "English Breakfast",
+      "ex": "몰티한 아쌈과 스모키한 스리랑카 캔디 지역의 홍차가 블렌딩된 잉글리시 브렉퍼스트 티"
+    },
+    {
+      "kname": "커즈마인",
+      "ename": "Citrus Chamomile",
+      "ex": "오렌지, 사과 등 다양한 과일 향과 꽃 향이 함께 블렌딩된 부드러운 캐모마일 티"
+    },
+    {
+      "kname": "오렌지 보스",
+      "ename": "Rooibos Orange",
+      "ex": "오렌지필, 초콜릿 향을 블렌딩하여 달콤하게 즐기는 논카페인 루이보스 티"
+    },
+    {
+      "kname": "민트크루",
+      "ename": "Mint Melange",
+      "ex": "페퍼민트, 스피아민트, 애플민트, 워터민트 등 다양한 민트가 블렌딩된 상쾌한 민트티"
+    },
+    {
+      "kname": "프루티 하동",
+      "ename": "Muscat Green Tea",
+      "ex": "하동 녹차에 달콤 향긋한 청포도, 그리고 과일 플레이버가 가미된 녹차"
+    },
+    {
+      "kname": "그린티 라뗴",
+      "ename": "Green Tea Latte",
+      "ex": "엄선된 고급 녹차파우더와 부드러운 스팀 밀크를 혼합한 그린티 음료"
+    },
+    {
+      "kname": "아이스 그린티 라떼",
+      "ename": "Iced Green Tea Latte",
+      "ex": "엄선된 고급 녹차파우더와 부드러운 스팀 밀크를 혼합한 그린티 음료"
+    },
+    {
+      "kname": "밀크티",
+      "ename": "Milk Tea",
+      "ex": "잉글리시 브렉퍼스트 티와 부드러운 우유가 잘 어우러진 티라떼"
+    },
+    {
+      "kname": "아이스 밀크티",
+      "ename": "Iced Milk Tea",
+      "ex": "잉글리시 브렉퍼스트 티와 부드러운 우유가 잘 어우러진 티라떼 "
+    },
+    {
+      "kname": "히비스커스 뱅쇼",
+      "ename": "Hibiscus Vin Chaud(Non Alcohol)",
+      "ex": "히비스커스 베이스, 후르츠 멜랑쥬티와 과일이 어우러져 가볍게 즐길 수 있는 향긋한 논알콜 음료"
+    },
+    {
+      "kname": "아이스 히비스커스 뱅쇼",
+      "ename": "Iced Hibiscus Vin Chaud(Non Alcohol)",
+      "ex": "히비스커스 베이스, 후르츠 멜랑쥬티와 과일이 어우러져 가볍게 즐길 수 있는 향긋한 논알콜 음료"
+    },
+    {
+      "kname": "복숭아 아이스티",
+      "ename": "Peach Iced Tea",
+      "ex": "달콤한 피치 베이스와 얼음을 혼합하여 시원하게 즐길 수 있는 아이스티"
+    },
+    {
+      "kname": "라즈베리 아이스티",
+      "ename": "Raspberry Iced Tea",
+      "ex": "달콤한 라즈베리 베이스와 얼음을 혼합하여 시원하게 즐길 수 있는 아이스티"
+    },
+    {
+      "kname": "아이스 오미자",
+      "ename": "Iced Omija Tea",
+      "ex": "단맛, 짠맛, 쓴맛, 매운맛, 신맛의 5가지 맛을 가진 오미자를 활용한 음료"
+    },
+    {
+      "kname": "오미자",
+      "ename": "Omija",
+      "ex": "단맛, 짠맛, 쓴맛, 매운맛, 신맛의 5가지 맛을 가진 오미자를 활용한 음료"
+    }
+  ],
+  "others": [
+    {
+      "kname": "청포도 콤부차",
+      "ename": "Green Grape Kombucha",
+      "ex": "콤부차 특유의 톡 쏘는듯한 청량감에 청포도의 상큼함이 더해진 음료"
+    },
+    {
+      "kname": "애플망고 콤부차",
+      "ename": "Apple Mango Lombucha",
+      "ex": "콤부차에 달콤한 애플망고 베이스가 어우러져 부담없이 즐기는 리프레셔 음료"
+    },
+    {
+      "kname": "애플 히비스커스 콤부차",
+      "ename": "Apple Hibiscus Kombucha",
+      "ex": "강렬한 레드 색상의 상큼한 사과와 히비스커스, 콤부차가 어우러져 산뜻하게 즐기는 리프레셔 음료"
+    },
+    {
+      "kname": "자몽 주스",
+      "ename": "Grapefruit Juice",
+      "ex": "새콤달콤 자몽향과 맛으로 과육이 씹히는 자몽주스"
+    },
+    {
+      "kname": "아이스 자몽 주스",
+      "ename": "Iced Grapefruit Juice",
+      "ex": "새콤달콤 자몽향과 맛으로 과육이 씹히는 자몽주스"
+    },
+    {
+      "kname": "흑당 펄 라떼",
+      "ename": "Brown Sugar Pearl Latte",
+      "ex": "흑당의 풍미가 우유의 고소함을 극대화시켜주는 쫀득한 펄이 씹히는 흑당 펄 라떼"
+    },
+    {
+      "kname": "아이스 흑당 펄 라떼",
+      "ename": "Iced Brown Sugar pearl Latte",
+      "ex": "흑당의 풍미가 우유의 고소함을 극대화 시켜주는 쫀득한 펄이 씹히는 흑당 펄 라떼"
+    },
+    {
+      "kname": "흑당 펄 밀크티",
+      "ename": "Brown Sugar Pearl Milk Tea",
+      "ex": "은은한 홍차향과 흑당의 풍미가 조화로운 쫀득한 펄이 씹히는 흑당 펄 밀크티"
+    },
+    {
+      "kname": "아이스 흑당 펄 밀크티",
+      "ename": "Iced Brown Sugar Pearl Milk Tea",
+      "ex": "은은한 홍차향과 흑당의 풍미가 조화로운 쫀득한 펄이 씹히는 흑당 펄 밀크티"
+    },
+    {
+      "kname": "초콜릿 라떼",
+      "ename": "Chocolate Latte",
+      "ex": "달콤한 다크 초콜릿과 부드러운 스팀 밀크를 혼합한 핫 초콜릿 음료"
+    },
+    {
+      "kname": "아이스 초콜릿 라떼",
+      "ename": "Iced Chocolate Latte",
+      "ex": "달콤한 다크 초콜릿과 부드러운 스팀 밀크를 혼합한 핫 초콜릿 음료"
+    },
+    {
+      "kname": "레몬 스파클링",
+      "ename": "Lemon Sparkling",
+      "ex": "상큼한 레몬베이스와 탄산수를 혼합한 스파클링 음료"
+    },
+    {
+      "kname": "자몽 스파클링",
+      "ename": "Grapefruit Sparkling",
+      "ex": "자몽베이스와 탄산수를 혼합한 스파클링 음료"
+    },
+    {
+      "kname": "청포도 스파클링",
+      "ename": "Green Grape Sparkling",
+      "ex": "청포도의 상큼한 맛과 탄산수가 조화를 이루는 스파클링 음료"
+    }
+  ],
+  "gelato": [
+    {
+      "kname": "바나나 젤라또",
+      "ename": "Banana Gelato",
+      "ex": "달콤한 바나나를 그대로 담은 건강한 이탈리안 젤라또"
+    },
+    {
+      "kname": "카카오골드 젤라또",
+      "ename": "Kakaogold Gelato",
+      "ex": "진한 카카오 맛의 건강한 이탈리안 젤라또"
+    },
+    {
+      "kname": "망고 젤라또",
+      "ename": "Mango Gelato",
+      "ex": "달콤하고 진한 망고를 듬뿍 담은 듯한 건강한 이탈리안 젤라또"
+    },
+    {
+      "kname": "피스타치오 젤라또",
+      "ename": "Pistachio Gelato",
+      "ex": "고소하고 진한 피스타치오 맛의 건강한 이탈리안 젤라또"
+    },
+    {
+      "kname": "초코 코코넛 젤라또",
+      "ename": "Chocococonut Gelato",
+      "ex": "달콤한 밀크초콜릿과 코코넛이 조화로운 건강한 이탈리안 젤라또"
+    },
+    {
+      "kname": "복숭아 젤라또",
+      "ename": "Peach Gelato",
+      "ex": "달콤한 복숭아와 살구가 잘 어우러진 샤베트"
+    },
+    {
+      "kname": "쏠티카라멜 젤라또",
+      "ename": "Saltycaramel Gelato",
+      "ex": "달콤한 카라멜과 부드러운 우유, 소금이 가미된 단짠이 조화로운 젤라또"
+    },
+    {
+      "kname": "망고패션 젤라또",
+      "ename": "Mango Passion Gelato",
+      "ex": "달콤한 망고와 새콤한 패션후르츠의 완벽한 조화가 이루어낸 파스쿠찌만의 젤라또"
+    },
+    {
+      "kname": "딸기라뗴 젤라또",
+      "ename": "Strawberry Latte Gelato",
+      "ex": "새콤달콤한 딸기와 부드러운 라떼가 믹스된 딸기라떼 젤라또"
+    },
+    {
+      "kname": "초코크런치 젤라또",
+      "ename": "Chocolate Crunch Gelato",
+      "ex": "밀크 초콜릿 젤라또 속 바삭아삭한 크런치 볼이 씹히는 젤라또"
+    },
+    {
+      "kname": "라떼 젤라또",
+      "ename": "Latte Gelato",
+      "ex": "이탈리아 젤라또의 대표적 플레이버로, 깊고 진한 우유의 풍미와 쫀득함을 느낄 수 있는 라떼 젤라또"
+    },
+    {
+      "kname": "요거트 젤라또",
+      "ename": "Yogurt Gelato",
+      "ex": "이탈리안 정통 디저트 '젤라또' 부드러운 식감을 가진 ,이탈리아식 아이스크림"
+    },
+    {
+      "kname": "체리 라떼 젤라또",
+      "ename": "Cherry Latte Gelato",
+      "ex": "부드러운 라떼 젤라또와 상큼한 체리가 만나 조화를 이룬 젤라또"
+    },
+    {
+      "kname": "티라미수 젤라또",
+      "ename": "Tiramisu Gelato",
+      "ex": "커피향이 은은하게 느껴지는 부드럽고 달콤한 티라미수 젤라또"
+    }
+  ]
+}

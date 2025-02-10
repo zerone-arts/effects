@@ -9,6 +9,8 @@ let list = [
   { icon: "MPF2", name: "MiniPortfolio2" },
   { icon: "JP", name: "Japan" },
   { icon: "WC", name: "WebCube" },
+  { icon: "OD", name: "OutDoor" },
+  { icon: "B", name: "Brand" },
 ];
 function HomeWeb({ titleHandle, scrollChannelHandle }) {
   const [title, setTitle] = useState("");

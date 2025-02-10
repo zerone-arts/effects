@@ -50,6 +50,8 @@ import MiniPortFolio2 from "./webPortpolio/miniportfolio2/miniporfolio2";
 import Japan from "./webPortpolio/japan/japan";
 import PhotoSlide3d from "./slidebox/photoSlide3d/photoSlide3d";
 import WebCube from "./webPortpolio/webcube/webcube";
+import OutDoor from "./webPortpolio/outdoors/outdoor";
+import Brand from "./webPortpolio/brand/brand";
 function App() {
   const [active, setActive] = useState("");
   const [left, setLeft] = useState("");
@@ -123,6 +125,8 @@ function App() {
           <Route path="/web/bluetheme" element={<Bluetheme />} />
           <Route path="/web/japan" element={<Japan />} />
           <Route path="/web/webcube" element={<WebCube />} />
+          <Route path="/web/outdoor" element={<OutDoor />} />
+          <Route path="/web/brand/*" element={<Brand />} />
 
           <Route path="/slide/slide1" element={<Slide1 />} />
           <Route path="/slide/slideshow3d" element={<Slideshow3d />} />
