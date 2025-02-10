@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import iceHazelnut from "../../../img/brand-menu-ice/iced_94353.jpg";
-import iceAmericano from "../../../img/brand-menu-ice/아이스아메리카노_154527.jpg";
-import iceCaffeLatte from "../../../img/brand-menu-ice/아이스카페라떼_154558.jpg";
-import iceCaramel from "../../../img/brand-menu-ice/아이스카라멜라떼마끼아또_154655.jpg";
-import iceVanilla from "../../../img/brand-menu-ice/아이스바닐라라떼마끼아또_15486.jpg";
-import iceMocha from "../../../img/brand-menu-ice/아이스카페모카_92612.jpg";
+import iceAmericano from "../../../img/brand-menu-ice/154527.jpg";
+import iceCaffeLatte from "../../../img/brand-menu-ice/154558.jpg";
+import iceCaramel from "../../../img/brand-menu-ice/154655.jpg";
+import iceVanilla from "../../../img/brand-menu-ice/15486.jpg";
+import iceMocha from "../../../img/brand-menu-ice/92612.jpg";
 let hotList = [
   "IceAmericano",
   "IceCaffelatte",
