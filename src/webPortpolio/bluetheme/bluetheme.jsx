@@ -4,6 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 function Bluetheme(props) {
   return (
     <div className="bt-container">
+      <span className="bt-home-imgHover"></span>
       <header className="bt-header">
         <Link to="/" className="bt-logo">
           Main.
@@ -46,7 +47,6 @@ function Bluetheme(props) {
             <i className="fa-brands fa-github"></i>
           </a>
         </div>
-        <span className="bt-home-imgHover"></span>
       </section>
     </div>
   );

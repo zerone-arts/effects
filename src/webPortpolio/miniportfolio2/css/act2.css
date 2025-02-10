@@ -1,0 +1,170 @@
+.act2-container {
+  background-color: white;
+  width: 100%;
+  height: 150vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+
+.act2-titlebox {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.act2-titlebox h2 {
+  font-weight: 100;
+  width: 100%;
+  text-align: center;
+}
+.act2-titlebox p {
+  font-weight: 200;
+  font-size: 10px;
+}
+
+.act2-profilebox {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.act2-profilebg {
+  position: absolute;
+  width: 70%;
+  height: 90%;
+  background-image: url(../img/act2-bg-v2.png);
+  background-position: center;
+  background-size: cover;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.act2-profile {
+  position: absolute;
+  width: 220px;
+  height: 100%;
+  left: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition: 0.5s all;
+}
+
+.act2-profile h1 {
+  position: relative;
+  font-weight: 300;
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  top: 10px;
+}
+
+.act2-profile-line {
+  width: 100%;
+  height: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.act2-profile-line hr {
+  width: 40px;
+  height: 0.5px;
+  border: 0;
+  background-color: white;
+}
+.act2-profile-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.act2-profile-img img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.act2-profile h3 {
+  position: relative;
+  color: white;
+  font-weight: 200;
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+  top: -10px;
+}
+.act2-profile h4 {
+  position: relative;
+  color: white;
+  font-weight: 200;
+  font-size: 10px;
+  top: -30px;
+}
+
+.act2-listbox {
+  width: 70%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.act2-list {
+  position: relative;
+
+  width: 250px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  top: 0px;
+}
+
+.act2-list div {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+}
+
+.act2-list div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.act2-list h3 {
+  width: 100%;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+}
+.act2-list p {
+  position: relative;
+  font-weight: 100;
+  font-size: 10px;
+  text-align: center;
+  top: -10px;
+}
+
+#testMouse {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border: 1px solid red;
+  top: 0;
+}

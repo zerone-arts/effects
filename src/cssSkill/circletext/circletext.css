@@ -6,7 +6,7 @@
   cursor: none;
 }
 
-.text {
+.ct-text {
   position: absolute;
   font-size: 1.5em;
   color: #0f0;
@@ -18,7 +18,7 @@
   animation: ctColorAnimate 5s linear infinite;
 }
 
-.text::before {
+.ct-text::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -30,11 +30,11 @@
   border-radius: 50%;
 }
 
-.ct-container:hover .text {
+.ct-container:hover .ct-text {
   opacity: 1;
 }
 
-.ct-container .text span {
+.ct-container .ct-text span {
   position: absolute;
   top: -100px;
   text-transform: uppercase;

@@ -3,10 +3,12 @@ import { Link, useLocation } from "react-router-dom";
 
 import "./home-web.css";
 let list = [
-  { icon: "P1", name: "Portfolio1" },
   { icon: "FS", name: "FullScreen" },
-  { icon: "NL", name: "NeonLogin" },
   { icon: "BT", name: "BlueTheme" },
+  { icon: "MPF1", name: "MiniPortfolio1" },
+  { icon: "MPF2", name: "MiniPortfolio2" },
+  { icon: "JP", name: "Japan" },
+  { icon: "WC", name: "WebCube" },
 ];
 function HomeWeb({ titleHandle, scrollChannelHandle }) {
   const [title, setTitle] = useState("");

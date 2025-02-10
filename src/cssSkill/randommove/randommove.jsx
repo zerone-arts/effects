@@ -18,7 +18,7 @@ function Randommove(props) {
         {objList.map((item, idx) => {
           return (
             <span
-              className={active}
+              className={`${active} rmo-span`}
               key={idx}
               style={{ transform: `rotate(calc(36deg *${idx + 1})` }}
             ></span>

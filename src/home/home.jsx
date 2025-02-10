@@ -11,7 +11,6 @@ import bg6 from "./img/bg6.jpg";
 import bg7 from "./img/bg7.jpg";
 import bg8 from "./img/bg8.jpg";
 import HomeSlide from "./slide/home-slide";
-import HomeCanvas from "./canvas/home-canvas";
 
 let bgList = [bg1, bg2, bg3, bg4, bg5, bg6, bg7, bg8];
 function Home({ left, top }) {
@@ -98,19 +97,7 @@ function Home({ left, top }) {
           <div></div>
         )}
       </div>
-      <div className="home-select" id="canvas">
-        <HomeCanvas
-          titleHandle={(e) => titleHandle(e)}
-          scrollChannelHandle={scrollChannelHandle}
-        />
-        {channel === "canvas" ? (
-          <div className="home-titleBx" style={{ left: left, top: top }}>
-            {title}
-          </div>
-        ) : (
-          <div></div>
-        )}
-      </div>
+
       <div className={`home-nav ${channel}`}>
         <ul>
           <li
@@ -142,16 +129,6 @@ function Home({ left, top }) {
             onMouseLeave={listOutHandle}
           >
             <a href="#slide">slide</a>
-          </li>
-          <li
-            onClick={() => {
-              setChannel("canvas");
-              setBgNum(Math.floor(Math.random() * bgList.length));
-            }}
-            onMouseOver={listHoverHandle}
-            onMouseLeave={listOutHandle}
-          >
-            <a href="#canvas">canvas</a>
           </li>
         </ul>
       </div>

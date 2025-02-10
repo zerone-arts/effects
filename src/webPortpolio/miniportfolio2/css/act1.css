@@ -1,0 +1,33 @@
+.act1-container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
+    url("../img/act1-bg-v2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-color: rgb(84, 84, 84);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.act1-titlebox {
+  width: 700px;
+  height: 150px;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.act1-titlebox h1 {
+  width: 100%;
+  font-weight: 100;
+  text-align: center;
+}
+
+.act1-titlebox p {
+  font-weight: 100;
+}

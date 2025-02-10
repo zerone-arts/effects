@@ -34,21 +34,22 @@ import Iphone15pro from "./cssSkill/iphone15pro/iphone15pro";
 import Climbobject from "./cssSkill/climbobject/climbobject";
 import Light from "./cssSkill/light/light";
 import Loaderanimate from "./cssSkill/loaderanimate/loaderanimate";
-
-import Portfolio1 from "./webPortpolio/portfolio1/portfolio1";
+import MiniPortfolio1 from "./webPortpolio/miniportfolio1/miniportfolio1";
 import Fullscreen from "./webPortpolio/fullscreen/fullscreen";
-import Neonlogin from "./webPortpolio/neonlogin/neonlogin";
+import Neonlogin from "./cssSkill/neonlogin/neonlogin";
 import Bluetheme from "./webPortpolio/bluetheme/bluetheme";
 import Slide1 from "./slidebox/slide1/slide1";
 import Circletext from "./cssSkill/circletext/circletext";
 import Slideshow3d from "./slidebox/slideshow3d/slideshow3d";
 import FlashlightHover from "./cssSkill/FlashlightHover/FlashlightHover";
 import RandomBackground from "./cssSkill/RandomBackground/RandomBackground";
-import CanvasGradient from "./canvas/CanvasGradient/CanvasGradient";
-import CanvasShapesRotate from "./canvas/CanvasShapesRotate/CanvasShapesRotate";
+import CanvasShapesRotate from "./cssSkill/CanvasShapesRotate/CanvasShapesRotate";
 import RadialOctagonMenu from "./cssSkill/RadialOctagonMenu/RadialOctagonMenu";
 import Sliderotation3d from "./slidebox/sliderotation3d/sliderotation3d";
-
+import MiniPortFolio2 from "./webPortpolio/miniportfolio2/miniporfolio2";
+import Japan from "./webPortpolio/japan/japan";
+import PhotoSlide3d from "./slidebox/photoSlide3d/photoSlide3d";
+import WebCube from "./webPortpolio/webcube/webcube";
 function App() {
   const [active, setActive] = useState("");
   const [left, setLeft] = useState("");
@@ -106,25 +107,27 @@ function App() {
           <Route path="/css/circletext" element={<Circletext />} />
           <Route path="/css/flashlighthover" element={<FlashlightHover />} />
           <Route path="/css/randombackground" element={<RandomBackground />} />
+          <Route path="/css/neonlogin" element={<Neonlogin />} />
           <Route
             path="/css/radialoctagonmenu"
             element={<RadialOctagonMenu />}
           />
+          <Route
+            path="/css/CanvasShapesRotate"
+            element={<CanvasShapesRotate />}
+          />
 
-          <Route path="/web/portfolio1" element={<Portfolio1 />} />
+          <Route path="/web/miniportfolio1" element={<MiniPortfolio1 />} />
           <Route path="/web/fullscreen" element={<Fullscreen />} />
-          <Route path="/web/neonlogin" element={<Neonlogin />} />
+          <Route path="/web/miniportfolio2" element={<MiniPortFolio2 />} />
           <Route path="/web/bluetheme" element={<Bluetheme />} />
+          <Route path="/web/japan" element={<Japan />} />
+          <Route path="/web/webcube" element={<WebCube />} />
 
           <Route path="/slide/slide1" element={<Slide1 />} />
           <Route path="/slide/slideshow3d" element={<Slideshow3d />} />
           <Route path="/slide/sliderotation3d" element={<Sliderotation3d />} />
-
-          <Route path="/canvas/CanvasGradient" element={<CanvasGradient />} />
-          <Route
-            path="/canvas/CanvasShapesRotate"
-            element={<CanvasShapesRotate />}
-          />
+          <Route path="/slide/photoslide3d" element={<PhotoSlide3d />} />
         </Routes>
       </div>
     </BrowserRouter>

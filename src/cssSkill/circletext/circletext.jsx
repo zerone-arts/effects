@@ -23,7 +23,7 @@ function Circletext(props) {
   return (
     <div className="ct-container">
       <h2
-        className="text"
+        className="ct-text"
         style={{
           left: left,
           top: top,

@@ -20,7 +20,7 @@
   height: 300px;
 }
 
-.rmo-loader span {
+.rmo-loader .rmo-span {
   position: absolute;
   top: 0;
   left: 0;
@@ -28,7 +28,7 @@
   height: 100%;
 }
 
-.rmo-loader span::before {
+.rmo-loader .rmo-span::before {
   content: "";
   position: absolute;
   top: 0;
@@ -47,7 +47,7 @@
   transform-origin: 20px;
   transition: 2s;
 }
-.rmo-loader:hover span::before {
+.rmo-loader:hover .rmo-span::before {
   transform-origin: 250px;
   box-shadow: 0 0 20px #00efff, -100px -100px 0px #00efff,
     -100px -100px 20px #00efff, 100px 100px 0px #00efff,

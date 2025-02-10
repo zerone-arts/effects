@@ -1,0 +1,76 @@
+.act5-container {
+  position: relative;
+  background-color: rgb(179, 179, 179);
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+.act5-objBox {
+  position: relative;
+  width: 180px;
+  height: 80%;
+  background-color: white;
+
+  box-shadow: -2px 2px 2px 2px rgb(70, 70, 70);
+  border-radius: 1px;
+}
+
+.act5-objTitle {
+  position: absolute;
+  transform: rotate(-90deg);
+  left: -15px;
+  bottom: 40px;
+
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transform: rotate(-90deg);
+}
+.act5-objText1 {
+  position: absolute;
+  font-family: "Dancing Script", cursive;
+  left: 20px;
+  top: 15px;
+}
+.act5-objText2 {
+  position: absolute;
+
+  font-weight: 400;
+  font-size: 10px;
+  transform: rotate(90deg);
+  right: -10px;
+  top: 60px;
+}
+.act5-objImg {
+  position: absolute;
+  background-color: black;
+  width: 70%;
+  height: 75%;
+  right: 10px;
+  bottom: 10px;
+}
+
+.act5-objImg img {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+}
+
+.act5-textBox {
+  position: relative;
+  width: 150px;
+  height: 80%;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.act5-textBox h2 {
+  font-size: 20px;
+  position: relative;
+  top: -15px;
+}

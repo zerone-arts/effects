@@ -14,7 +14,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 100;
 }
 
 .bt-logo {
@@ -22,6 +21,7 @@
   font-size: 22px;
   color: #ededed;
   font-weight: 600;
+  text-decoration: none;
 }
 
 .bt-logo::before {
@@ -42,6 +42,20 @@
   font-weight: 500;
   margin-left: 35px;
 }
+.bt-navbar {
+  position: relative;
+}
+.bt-navbar:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #081b29;
+  animation: btShowRight 1s ease forwards;
+  animation-delay: 3s;
+}
 
 .bt-navbar a:hover,
 .bt-navbar a.bt-active {
@@ -53,7 +67,7 @@
   align-items: center;
   height: 100vh;
   padding: 0 10%;
-  background: url("./bt-bg.png") no-repeat;
+  background: url("./bt-bg.jpg") no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -153,6 +167,7 @@
   z-index: 1;
   overflow: hidden;
   transition: 0.5s;
+  text-decoration: none;
 }
 .bt-home-content .bt-btn-box a:hover {
   color: #00abf0;
@@ -243,12 +258,12 @@
 
 .bt-home-imgHover {
   position: absolute;
-  top: 0;
-  right: 30px;
-  width: 500px;
+
+  width: 100%;
   height: 100%;
   background: transparent;
   transition: 3s;
+
   animation: btManipActiveHover 0.1s forwards;
   animation-delay: 4s;
   pointer-events: none;
@@ -259,12 +274,11 @@
   position: absolute;
   right: 0;
   top: 0;
-  width: 120%;
+  width: 100%;
   height: 100%;
   background: #081b29;
   animation: btShowRight 1s ease forwards;
-  animation-delay: 100s;
-  z-index: 100;
+  animation-delay: 3s;
 }
 
 .bt-home-imgHover:hover {

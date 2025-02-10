@@ -6,7 +6,7 @@ let list = [
   { icon: "SL1", name: "Slide1" },
   { icon: "SS3", name: "SlideShow3d" },
   { icon: "SR3", name: "SlideRotation3d " },
-  { icon: "", name: "" },
+  { icon: "PS3", name: "PhotoSlide3d" },
   { icon: "", name: "" },
 ];
 function HomeSlide({ titleHandle, scrollChannelHandle }) {

@@ -1,0 +1,87 @@
+.ps3-main-container {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: black;
+}
+
+.ps3-slide-box {
+  position: relative;
+  top: 30px;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 350px;
+}
+
+.ps3-slide {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: black;
+}
+
+.ps3-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s all;
+  -webkit-box-reflect: below 1px
+    linear-gradient(transparent, transparent, #0006);
+}
+
+.ps3-img.active {
+  opacity: 0.9;
+}
+
+.explain {
+  opacity: 1;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: -100px;
+  opacity: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5) 70%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s all;
+}
+
+.explain.up {
+  bottom: 0px;
+  opacity: 1;
+}
+
+.explain p {
+  color: white;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
