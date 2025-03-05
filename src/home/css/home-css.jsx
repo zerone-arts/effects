@@ -84,7 +84,9 @@ function HomeCss({ titleHandle, scrollChannelHandle }) {
                 onMouseOver={(e) => OverHandle(e, item)}
                 onMouseLeave={OutHandle}
               >
-                <Link to={`/css/${item.name.toLowerCase()}`}>{item.icon}</Link>
+                <Link to={`/css/${item.name.toLowerCase()}`} target="_blank">
+                  {item.icon}
+                </Link>
               </li>
             ) : (
               <div key={idx} style={{ display: "none" }}></div>

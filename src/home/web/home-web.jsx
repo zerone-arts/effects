@@ -3,14 +3,15 @@ import { Link, useLocation } from "react-router-dom";
 
 import "./home-web.css";
 let list = [
-  { icon: "FS", name: "FullScreen" },
-  { icon: "BT", name: "BlueTheme" },
-  { icon: "MPF1", name: "MiniPortfolio1" },
-  { icon: "MPF2", name: "MiniPortfolio2" },
-  { icon: "JP", name: "Japan" },
-  { icon: "WC", name: "WebCube" },
-  { icon: "OD", name: "OutDoor" },
-  { icon: "B", name: "Brand" },
+  { icon: "Q&A", name: "QnA", url: "https://qna-zerone.vercel.app" },
+  { icon: "FS", name: "FullScreen", url: "/fullscreen" },
+  { icon: "BT", name: "BlueTheme", url: "/bluetheme" },
+  { icon: "MPF1", name: "MiniPortfolio1", url: "/miniportfolio1" },
+  { icon: "MPF2", name: "MiniPortfolio2", url: "/miniportfolio2" },
+  { icon: "JP", name: "Japan", url: "japan" },
+  { icon: "WC", name: "WebCube", url: "webcube" },
+  { icon: "OD", name: "OutDoor", url: "outdoor" },
+  { icon: "B", name: "Brand", url: "brand" },
 ];
 function HomeWeb({ titleHandle, scrollChannelHandle }) {
   const [title, setTitle] = useState("");
@@ -51,7 +52,20 @@ function HomeWeb({ titleHandle, scrollChannelHandle }) {
                 onMouseOver={(e) => OverHandle(e, item)}
                 onMouseLeave={OutHandle}
               >
-                <Link to={`/web/${item.name.toLowerCase()}`}>{item.icon}</Link>
+                {item.url.startsWith("http") ? (
+                  <a
+                    key={item.name}
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {item.icon}
+                  </a>
+                ) : (
+                  <Link key={item.name} to={`/web${item.url}`} target="_blank">
+                    {item.icon}
+                  </Link>
+                )}
               </li>
             ) : (
               <div key={idx} style={{ display: "none" }}></div>

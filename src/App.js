@@ -53,13 +53,9 @@ import WebCube from "./webPortpolio/webcube/webcube";
 import OutDoor from "./webPortpolio/outdoors/outdoor";
 import Brand from "./webPortpolio/brand/brand";
 function App() {
-  const [active, setActive] = useState("");
   const [left, setLeft] = useState("");
   const [top, setTop] = useState("");
 
-  const activeHandle = (e) => {
-    setActive(e);
-  };
   const mouseMoveHandle = (e) => {
     setLeft(e.clientX + "px");
     setTop(e.clientY + "px");
@@ -72,7 +68,6 @@ function App() {
           mouseMoveHandle(e);
         }}
       >
-        <Arrow activeHandle={activeHandle} />
         <Routes>
           <Route path="/" element={<Home left={left} top={top} />} />
           <Route path="/css/changecursor" element={<ChangeCursor />} />

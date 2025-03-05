@@ -48,7 +48,7 @@ function HomeSlide({ titleHandle, scrollChannelHandle }) {
                 onMouseOver={(e) => OverHandle(e, item)}
                 onMouseLeave={OutHandle}
               >
-                <Link to={`/slide/${item.name.toLowerCase()}`}>
+                <Link to={`/slide/${item.name.toLowerCase()}`} target="_blank">
                   {item.icon}
                 </Link>
               </li>
