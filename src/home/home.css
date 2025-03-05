@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   height: 300vh;
-  background: #0b0d16;
+
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -10,6 +10,22 @@
   right: 0%;
   transition: 0.5s;
   cursor: none;
+}
+
+.home-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/src/home/img/bg1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  filter: brightness(50%); /* 밝기 조절 (100%가 기본) */
+  z-index: -1; /* 내용보다 뒤에 배치 */
 }
 .home-bg {
   position: fixed;
